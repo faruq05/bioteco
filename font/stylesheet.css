@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Bold.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-BlackItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Black.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-ExtraBold.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-BoldItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-ExtraBoldItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-LightItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Light.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Italic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Medium.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-ExtraLightItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-ExtraLight.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-SemiBold.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Regular.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-MediumItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-ThinItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-SemiBoldItalic.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo SemiExpanded';
+    src: url('ArchivoSemiExpanded-Thin.woff2') format('woff2'),
+        url('ArchivoSemiExpanded-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
