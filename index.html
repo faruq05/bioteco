@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <!-- stylesheet -->
+  <link rel="icon" href="./images/favicon.png" />
   <link rel="stylesheet" href="./font/stylesheet.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/media.css" />
@@ -21,7 +22,7 @@
 
 <body>
   <!-- header starts========================================= -->
-  <header id="header">
+  <header id="header" data-section="header">
     <div class="top-bar pt-3 pb-3">
       <div class="container d-flex justify-content-between align-items-center">
         <span>Vyberte si inú krajinu alebo oblasť, aby ste videli obsah
@@ -38,27 +39,9 @@
 
     <!-- Light Gray Info Bar -->
     <div class="info-bar pt-2 pb-2">
-  <div class="container">
-    <!-- Desktop View (original layout) -->
-    <div class="d-none d-lg-flex justify-content-between align-items-center">
-      <span class="d-flex align-items-center">
-        <img src="images/tag.svg" class="pe-2" alt="tag" />
-        <p class="mb-0">Odporučte nás a získajte zľavu na ďalší nákup</p>
-      </span>
-      <span class="d-flex align-items-center">
-        <img src="images/truck.svg" class="pe-2" alt="truck" />
-        <p class="mb-0">Doprava zdarma pri objednávke nad 150 €</p>
-      </span>
-      <span class="d-flex align-items-center">
-        <img src="images/like.svg" class="pe-2" alt="like" />
-        <p class="mb-0">Výhody pre firmy / registráciu</p>
-      </span>
-    </div>
-    
-    <!-- Mobile View (marquee) -->
-    <div class="d-lg-none marquee-wrapper">
-      <div class="marquee">
-        <div class="marquee-content">
+      <div class="container">
+        <!-- Desktop View (original layout) -->
+        <div class="d-none d-lg-flex justify-content-between align-items-center">
           <span class="d-flex align-items-center">
             <img src="images/tag.svg" class="pe-2" alt="tag" />
             <p class="mb-0">Odporučte nás a získajte zľavu na ďalší nákup</p>
@@ -72,10 +55,28 @@
             <p class="mb-0">Výhody pre firmy / registráciu</p>
           </span>
         </div>
+
+        <!-- Mobile View (marquee) -->
+        <div class="d-lg-none marquee-wrapper">
+          <div class="marquee">
+            <div class="marquee-content">
+              <span class="d-flex align-items-center">
+                <img src="images/tag.svg" class="pe-2" alt="tag" />
+                <p class="mb-0">Odporučte nás a získajte zľavu na ďalší nákup</p>
+              </span>
+              <span class="d-flex align-items-center">
+                <img src="images/truck.svg" class="pe-2" alt="truck" />
+                <p class="mb-0">Doprava zdarma pri objednávke nad 150 €</p>
+              </span>
+              <span class="d-flex align-items-center">
+                <img src="images/like.svg" class="pe-2" alt="like" />
+                <p class="mb-0">Výhody pre firmy / registráciu</p>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <!-- Navbar -->
     <nav class="navbar bg navbar-expand-xl py-3">
@@ -157,7 +158,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" data-section="hero">
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="true">
       <!-- Indicators -->
       <div class="carousel-indicators">
@@ -260,7 +261,7 @@
   </section>
 
   <!-- category section -->
-  <section class="category cp60 bg">
+  <section class="category cp60 bg" data-section="categories">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-12 text-center">
@@ -406,7 +407,7 @@
   </section>
 
   <!-- cta -->
-  <section class="highlight_product cp60 bg">
+  <section class="highlight_product cp60 bg" data-section="featured_products">
     <div class="container">
       <div class="row g-4 rounded-3 m-1">
         <div class="col-md-12 col-lg-6 m-0 p-0">
@@ -439,7 +440,7 @@
         <div class="col-md-12 text-center">
           <h2>Akciové produkty</h2>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-4">
           <div class="product_card">
             <div class="best_seller bg-dark">
               <span>🔥 bestseller</span>
@@ -466,7 +467,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-4">
           <div class="product_card">
             <div class="product_image mb-3 rounded-3">
               <img src="images/znova.png" class="img-fluid" alt="čerpadlo Z NOVA" />
@@ -490,7 +491,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-4">
           <div class="product_card">
             <div class="product_image mb-3 rounded-3">
               <img src="images/bg05unf.png" class="img-fluid" alt="čerpadlo BF-05UNF" />
@@ -514,7 +515,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-4">
           <div class="product_card">
             <div class="product_image mb-3 rounded-3">
               <img src="images/75qjd224.png" class="img-fluid" alt="čerpadlo 75QJD224" />
@@ -541,7 +542,7 @@
   </section>
 
   <!-- footer -->
-  <div class="footer py-5 cp60">
+  <div class="footer py-5 cp60" data-section="footer">
     <div class="container pb-3">
       <div class="row">
         <div class="col-md-8">
@@ -664,34 +665,7 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <!-- Mouse Drag Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const carousel = document.querySelector("#heroCarousel");
-      let isDown = false,
-        startX,
-        scrollLeft;
-
-      carousel.addEventListener("mousedown", (e) => {
-        isDown = true;
-        startX = e.pageX;
-      });
-
-      carousel.addEventListener("mouseleave", () => (isDown = false));
-      carousel.addEventListener("mouseup", () => (isDown = false));
-
-      carousel.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        const walk = e.pageX - startX;
-        if (walk > 50) {
-          bootstrap.Carousel.getInstance(carousel).prev();
-          isDown = false;
-        } else if (walk < -50) {
-          bootstrap.Carousel.getInstance(carousel).next();
-          isDown = false;
-        }
-      });
-    });
-  </script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
