@@ -165,18 +165,12 @@
     margin-left: 0.25rem;
     vertical-align: middle;
   }
-  .search-box input {
-    padding-left: 2.5rem;
-    background: url('../src/images/search.svg') no-repeat 0.5rem center;
-    background-size: 1.125rem 1.125rem;
-    border: none;
-    background-color: #fff;
-  }
+
   .hero {
     background: url('../src/images/banner_bg.png') no-repeat right center;
     background-size: contain;
   }
-
+  
 
  .category-card {
     background: url('../src/images/category_bg.png') no-repeat bottom center;

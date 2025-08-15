@@ -192,9 +192,61 @@
               <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
             </ul>
           </li>
-          <!-- Add remaining items similarly -->
-          <li><a href="#" class="block text-sm-light font-medium py-2 hover:text-primary">Priemysel</a></li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Zmäkčovač')">
+              Zmäkčovač vody <span>▾</span>
+            </button>
+            <ul id="mobile-Zmäkčovač" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Kúpeľne')">
+              Kúpeľne <span>▾</span>
+            </button>
+            <ul id="mobile-Kúpeľne" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li class="navlinks">
+            <a href="#" class="text-sm-light font-medium hover:text-primary">Priemysel</a>
+          </li>
+
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Kúpeľne')">
+              Sprostredkovanie <span>▾</span>
+            </button>
+            <ul id="mobile-Kúpeľne" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+
         </ul>
+        <!-- Search + Icons -->
+        <div class="flex items-center space-x-3 search-box">
+          <div class="relative">
+            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+              <!-- You can replace with your own SVG if needed -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-search-icon lucide-search">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </span>
+            <input type="search" placeholder="Hľadať produkt..."
+              class="w-64 py-2 pl-10 pr-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <a href="#"><img src="./src/images/flag.svg" class="w-6 h-6" /></a>
+          <a href="#"><img src="./src/images/user.svg" class="w-6 h-6" /></a>
+          <a href="#"><img src="./src/images/cart.svg" class="w-6 h-6" /></a>
+        </div>
       </div>
     </nav>
   </header>
@@ -420,8 +472,7 @@
               odstránenie vodného kameňa. IPS Kalyxx je váš spoľahlivý partner
               v boji proti vodnému kameňu.
             </p>
-            <a href="#"
-              class="btn-blue">ZOBRAZIT
+            <a href="#" class="btn-blue">ZOBRAZIT
               PRODUKT</a>
           </div>
         </div>
