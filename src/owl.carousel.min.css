@@ -29,7 +29,7 @@
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0)
 }
 
 .owl-carousel .owl-item,
@@ -51,7 +51,7 @@
 
 .owl-carousel .owl-item img {
     display: block;
-    width: auto
+    max-width: 100%;
 }
 
 .owl-carousel .owl-dots.disabled,
