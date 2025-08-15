@@ -5,72 +5,72 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bioteco</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <!-- stylesheet -->
-  <link rel="icon" href="./images/favicon.png" />
+  <link rel="stylesheet" href="./src/output.css" />
   <link rel="stylesheet" href="./font/stylesheet.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="./src/media.css" />
+  <link rel="stylesheet" href="./src/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./src/owl.theme.default.min.css" />
 
 </head>
 
-<body>
+<body class="font-body">
   <!-- header starts========================================= -->
   <header id="header" data-section="header">
-    <div class="top-bar pt-3 pb-3">
-      <div class="container d-flex justify-content-between align-items-center">
-        <span>Vyberte si inú krajinu alebo oblasť, aby ste videli obsah
-          špecifický pre vašu polohu a nakupujte online.</span>
-        <div class="d-flex align-items-center">
-          <select class="form-select form-select-sm me-2 rounded">
-            <option>Slovenská republika (Slovenčina)</option>
-            <option>Česká republika (Čeština)</option>
+    <div class="top-bar pt-3 pb-3 bg-text text-white text-xs">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <span>Vyberte si inú krajinu alebo oblasť, aby ste videli obsah špecifický pre vašu polohu a nakupujte
+          online.</span>
+        <div class="flex items-center gap-4">
+          <select class="rounded border border-gray-300 px-2 py-1 bg-white text-black">
+            <option class="bg-white text-black">Slovenská republika (Slovenčina)</option>
+            <option class="bg-white text-black">Česká republika (Čeština)</option>
           </select>
-          <button class="btn btn-sm btn-dark">POKRAČOVAŤ</button>
+          <button class="btn-dark">POKRAČOVAŤ</button>
         </div>
       </div>
     </div>
 
     <!-- Light Gray Info Bar -->
     <div class="info-bar pt-2 pb-2">
-      <div class="container">
+      <div class="container mx-auto px-4">
         <!-- Desktop View (original layout) -->
-        <div class="d-none d-lg-flex justify-content-between align-items-center">
-          <span class="d-flex align-items-center">
-            <img src="images/tag.svg" class="pe-2" alt="tag" />
-            <p class="mb-0">Odporučte nás a získajte zľavu na ďalší nákup</p>
+        <div class="hidden lg:flex justify-between items-center info-bar-content">
+          <span class="flex items-center">
+            <img src="./src/images/tag.svg" class="pe-2" alt="tag" />
+            <p class="mb-0 text-sm">Odporučte nás a získajte zľavu na ďalší nákup</p>
           </span>
-          <span class="d-flex align-items-center">
-            <img src="images/truck.svg" class="pe-2" alt="truck" />
-            <p class="mb-0">Doprava zdarma pri objednávke nad 150 €</p>
+          <span class="flex items-center">
+            <img src="./src/images/truck.svg" class="pe-2" alt="truck" />
+            <p class="mb-0 text-sm">Doprava zdarma pri objednávke nad 150 €</p>
           </span>
-          <span class="d-flex align-items-center">
-            <img src="images/like.svg" class="pe-2" alt="like" />
-            <p class="mb-0">Výhody pre firmy / registráciu</p>
+          <span class="flex items-center">
+            <img src="./src/images/like.svg" class="pe-2" alt="like" />
+            <p class="mb-0 text-sm">Výhody pre firmy / registráciu</p>
           </span>
         </div>
 
         <!-- Mobile View (marquee) -->
-        <div class="d-lg-none marquee-wrapper">
+        <div class="lg:hidden marquee-wrapper">
           <div class="marquee">
             <div class="marquee-content">
-              <span class="d-flex align-items-center">
-                <img src="images/tag.svg" class="pe-2" alt="tag" />
-                <p class="mb-0">Odporučte nás a získajte zľavu na ďalší nákup</p>
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/tag.svg" class="pe-2" alt="tag" />
+                <p class="mb-0 text-sm">Odporučte nás a získajte zľavu na ďalší nákup</p>
               </span>
-              <span class="d-flex align-items-center">
-                <img src="images/truck.svg" class="pe-2" alt="truck" />
-                <p class="mb-0">Doprava zdarma pri objednávke nad 150 €</p>
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/truck.svg" class="pe-2" alt="truck" />
+                <p class="mb-0 text-sm">Doprava zdarma pri objednávke nad 150 €</p>
               </span>
-              <span class="d-flex align-items-center">
-                <img src="images/like.svg" class="pe-2" alt="like" />
-                <p class="mb-0">Výhody pre firmy / registráciu</p>
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/like.svg" class="pe-2" alt="like" />
+                <p class="mb-0 text-sm">Výhody pre firmy / registráciu</p>
               </span>
             </div>
           </div>
@@ -79,326 +79,323 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar bg navbar-expand-xl py-3">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="bg-background py-3 shadow">
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0">
+          <img src="./src/images/logo.png" alt="Logo" class="w-[120px]" />
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button id="mobile-menu-button" class="2xl:hidden flex flex-col justify-between w-6 h-6 focus:outline-none">
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Čerpadlá
-                <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+
+        <!-- Desktop Menu -->
+        <div class="hidden 2xl:flex flex-1 items-center justify-between">
+          <ul class="flex space-x-8 mx-auto">
+            <!-- Čerpadlá -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Čerpadlá <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
-                <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
               </ul>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Príslušenstvo
-                <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+            <!-- Príslušenstvo -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Príslušenstvo <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
-                <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
               </ul>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Zmäkčovač vody
-                <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+            <!-- Zmäkčovač vody -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Zmäkčovač vody <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
-                <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
               </ul>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Kúpeľne
-                <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+            <!-- Kúpeľne -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Kúpeľne <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
-                <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
               </ul>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Priemysel</a>
+            <!-- Priemysel -->
+            <li class="navlinks">
+              <a href="#" class="text-sm-light font-medium hover:text-primary">Priemysel</a>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                Sprostredkovanie
-                <img src="images/dropdown.svg" class="dropdown-icon" alt="" />
+            <!-- Sprostredkovanie -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Sprostredkovanie <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sub-item 1</a></li>
-                <li><a class="dropdown-item" href="#">Sub-item 2</a></li>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
               </ul>
             </li>
           </ul>
-          <div class="d-flex align-items-center mt-3 mt-lg-0 search-box">
-            <input class="form-control me-4 rounded-pill" type="search" placeholder="Hľadať produkt..." />
-            <span class="me-3"><a href="#"><img src="images/flag.svg" alt="flag" /></a></span>
-            <span class="me-3"><a href="#"><img src="images/user.svg" alt="user" /></a></span>
-            <span><a href="#"><img src="images/cart.svg" alt="user" /></a></span>
+
+          <!-- Search + Icons -->
+          <div class="flex items-center space-x-3">
+            <input type="search" placeholder="Hľadať produkt..."
+              class="w-64 py-2 px-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <a href="#"><img src="./src/images/flag.svg" class="w-6 h-6" /></a>
+            <a href="#"><img src="./src/images/user.svg" class="w-6 h-6" /></a>
+            <a href="#"><img src="./src/images/cart.svg" class="w-6 h-6" /></a>
           </div>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden 2xl:hidden mt-2 px-4">
+        <ul class="space-y-2">
+          <!-- Repeat all menu items -->
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-cerpadla')">
+              Čerpadlá <span>▾</span>
+            </button>
+            <ul id="mobile-cerpadla" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-prislusenstvo')">
+              Príslušenstvo <span>▾</span>
+            </button>
+            <ul id="mobile-prislusenstvo" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <!-- Add remaining items similarly -->
+          <li><a href="#" class="block text-sm-light font-medium py-2 hover:text-primary">Priemysel</a></li>
+        </ul>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" data-section="hero">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="true">
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-      </div>
+  <section class="hero cp60" data-section="hero">
+    <div class="owl-carousel owl-theme">
 
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row align-items-center g-5 cp60">
-              <div class="col-lg-6">
-                <p class="d-flex align-items-center stars-tag">
-                  <img src="images/stars.svg" class="img-fluid pe-2" alt="stars" />
-                  SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
-                </p>
-                <h1 class="mt-4 mb-2">
-                  Čerpadlá, závlahy a všetko medzi tým.
-                </h1>
-                <p class="mb-4">
-                  Široký sortiment, odborné poradenstvo a rýchle doručenie.
-                </p>
-                <div class="d-flex  hero_button">
-                  <a href="#" class="btn btn-blue me-3">ZOBRAZIŤ PRODUKTY</a>
-                  <a href="#" class="btn btn-outline-blue">KONTAKTUJTE NÁS</a>
-                </div>
-              </div>
-              <div class="col-lg-6 text-center">
-                <img src="images/banner-product.png" alt="Banner 1" class="img-fluid" />
-              </div>
+      <!-- Slide 1 -->
+      <div class="hero_slide_content">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-5">
+          <div class="lg:w-1/2">
+            <p class="flex items-center text-xs font-medium hero_stars">
+              <img src="./src/images/stars.svg" class="pe-2" alt="stars" />
+              SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
+            </p>
+            <h1 class="text-3xl font-bold mb-4 mt-8">
+              Čerpadlá, závlahy a všetko medzi tým.
+            </h1>
+            <p class="text-sm mb-4">
+              Široký sortiment, odborné poradenstvo a rýchle doručenie.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="btn-blue">ZOBRAZIŤ PRODUKTY</a>
+              <a href="#" class="btn-outline-blue">KONTAKTUJTE NÁS</a>
             </div>
           </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row align-items-center g-5 cp60">
-              <div class="col-lg-6">
-                <p class="d-flex align-items-center stars-tag">
-                  <img src="images/stars.svg" class="img-fluid pe-2" alt="stars" />
-                  SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
-                </p>
-                <h1 class="mt-4 mb-2">
-                  Čerpadlá, závlahy a všetko medzi tým.
-                </h1>
-                <p class="mb-4">
-                  Široký sortiment, odborné poradenstvo a rýchle doručenie.
-                </p>
-                <div class="d-flex hero_button">
-                  <a href="#" class="btn btn-blue me-3">ZOBRAZIŤ PRODUKTY</a>
-                  <a href="#" class="btn btn-outline-blue">KONTAKTUJTE NÁS</a>
-                </div>
-              </div>
-              <div class="col-lg-6 text-center">
-                <img src="images/banner-product.png" alt="Banner 1" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row align-items-center g-5 cp60">
-              <div class="col-lg-6">
-                <p class="d-flex align-items-center stars-tag">
-                  <img src="images/stars.svg" class="img-fluid pe-2" alt="stars" />
-                  SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
-                </p>
-                <h1 class="mt-4 mb-2">
-                  Čerpadlá, závlahy a všetko medzi tým.
-                </h1>
-                <p class="mb-4">
-                  Široký sortiment, odborné poradenstvo a rýchle doručenie.
-                </p>
-                <div class="d-flex hero_button">
-                  <a href="#" class="btn btn-blue me-3">ZOBRAZIŤ PRODUKTY</a>
-                  <a href="#" class="btn btn-outline-blue">KONTAKTUJTE NÁS</a>
-                </div>
-              </div>
-              <div class="col-lg-6 text-center">
-                <img src="images/banner-product.png" alt="Banner 1" class="img-fluid" />
-              </div>
-            </div>
+          <div class="lg:w-1/2 text-center">
+            <img src="./src/images/banner-product.png" class="mx-auto" alt="Banner 1" />
           </div>
         </div>
       </div>
 
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+      <!-- Slide 2 -->
+      <div class="hero_slide_content">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-5">
+          <div class="lg:w-1/2">
+            <p class="flex items-center text-xs font-medium hero_stars">
+              <img src="./src/images/stars.svg" class="pe-2" alt="stars" />
+              SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
+            </p>
+            <h1 class="text-3xl font-bold mb-4 mt-8">
+              Čerpadlá, závlahy a všetko medzi tým.
+            </h1>
+            <p class="text-sm mb-4">
+              Široký sortiment, odborné poradenstvo a rýchle doručenie.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="btn-blue">ZOBRAZIŤ PRODUKTY</a>
+              <a href="#" class="btn-outline-blue">KONTAKTUJTE NÁS</a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 text-center">
+            <img src="./src/images/banner-product.png" class="mx-auto" alt="Banner 2" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero_slide_content">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-5">
+          <div class="lg:w-1/2">
+            <p class="flex items-center text-xs font-medium hero_stars">
+              <img src="./src/images/stars.svg" class="pe-2" alt="stars" />
+              SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
+            </p>
+            <h1 class="text-3xl font-bold mb-4 mt-8">
+              Čerpadlá, závlahy a všetko medzi tým.
+            </h1>
+            <p class="text-sm mb-4">
+              Široký sortiment, odborné poradenstvo a rýchle doručenie.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="btn-blue">ZOBRAZIŤ PRODUKTY</a>
+              <a href="#" class="btn-outline-blue">KONTAKTUJTE NÁS</a>
+            </div>
+          </div>
+          <div class="lg:w-1/2 text-center">
+            <img src="./src/images/banner-product.png" class="mx-auto" alt="Banner 3" />
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- category section -->
-  <section class="category cp60 bg" data-section="categories">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-12 text-center">
-          <h2>Hlavné kategórie</h2>
+  <section class="cp60 bg-background" data-section="categories">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center">
+          <h2 class="text-2xl font-bold">Hlavné kategórie</h2>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>DOMÁCE VODÁRNICKY</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/domance.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <!-- Category Card 1 -->
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">DOMÁCE VODÁRNICKY</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/domance.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Samonasávacie čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/samona.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <!-- Category Card 2 -->
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Samonasávacie čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/samona.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Ponorné čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/ponorne.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <!-- Continue with other category cards -->
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Ponorné čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/ponorne.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Odstredivé čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/odstre.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Odstredivé čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/odstre.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>OBenzínové čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/benzinove.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">OBenzínové čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/benzinove.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Bazénové čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/bazenove.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Bazénové čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/bazenove.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Obehové Čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/obehove.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Obehové Čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/obehove.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Kalové a drenažné čerpadlá</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/kalove.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Kalové a drenažné čerpadlá</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/kalove.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="category-card rounded-3">
-            <div class="card-content">
-              <!-- Left text -->
-              <div class="text-area">
-                <h3>Ovládacie jednotky</h3>
-                <a href="#"><img src="images/arrow-right.svg" alt="arrow-right" /></a>
-              </div>
-              <!-- Right image -->
-              <div class="image-area text-right">
-                <img src="images/obladacie.png" class="img-fluid" alt="Domáce Vodárničky" />
-              </div>
+
+        <div class="category-card rounded-xl">
+          <div class="card-content">
+            <div class="text-area">
+              <h3 class="text-xl font-bold uppercase">Ovládacie jednotky</h3>
+              <a href="#"><img src="./src/images/arrow-right.svg" alt="arrow-right" /></a>
+            </div>
+            <div class="image-area text-right">
+              <img src="./src/images/obladacie.png" class="mx-auto" alt="Domáce Vodárničky" />
             </div>
           </div>
         </div>
@@ -407,15 +404,15 @@
   </section>
 
   <!-- cta -->
-  <section class="highlight_product cp60 bg" data-section="featured_products">
-    <div class="container">
-      <div class="row g-4 rounded-3 m-1">
-        <div class="col-md-12 col-lg-6 m-0 p-0">
-          <div class="cta_text">
-            <img src="images/ekology_badge.png" class="img-fluid" alt="ekology">
-            <p class="badge_text mt-4 mb-4">Bez elektriny. Bez chémie. Bez údržby.</p>
-            <h2>Redukcia tvorby vodného kameňa s účinnosťou až 76%</h2>
-            <p class="product-description  mt-4 mb-4">
+  <section class="highlight_product cp60 bg-background" data-section="featured_products">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row bg-white rounded-xl m-1">
+        <div class="lg:w-1/2 p-0">
+          <div class="cta_text p-8">
+            <img src="./src/images/ekology_badge.png" alt="ekology">
+            <p class="uppercase font-medium mt-4 mb-4">Bez elektriny. Bez chémie. Bez údržby.</p>
+            <h1 class="text-2xl font-bold">Redukcia tvorby vodného kameňa s účinnosťou až 76%</h1>
+            <p class="mt-4 mb-4">
               IPS Kalyxx používa patentovanú technológiu galvanickej
               polarizácie (TGPS) na zabránenie tvorby vodného kameňa na
               prvkoch ohrievača vody. Pri pravidelnom používaní IPS Kalyxx,
@@ -423,10 +420,12 @@
               odstránenie vodného kameňa. IPS Kalyxx je váš spoľahlivý partner
               v boji proti vodnému kameňu.
             </p>
-            <a href="#" class="btn btn-blue">ZOBRAZIT PRODUKT</a>
+            <a href="#"
+              class="btn-blue">ZOBRAZIT
+              PRODUKT</a>
           </div>
         </div>
-        <div class="col-md-12 col-lg-6 m-0 cta_image">
+        <div class="lg:w-1/2 m-0 cta_image min-h-[400px]">
 
         </div>
       </div>
@@ -434,235 +433,264 @@
   </section>
 
   <!-- featured_products -->
-  <section class="featured_products cp60 bg">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-12 text-center">
-          <h2>Akciové produkty</h2>
+  <section class="featured_products cp60 bg-background">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="col-span-1 md:col-span-2 lg:col-span-4 text-center">
+          <h2 class="text-2xl font-bold">Akciové produkty</h2>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="product_card">
-            <div class="best_seller bg-dark">
-              <span>🔥 bestseller</span>
-            </div>
-            <div class="product_image mb-3 rounded-3">
-              <img src="images/cerpadlo.png" class="img-fluid" alt="čerpadlo WJ 203 EM" />
-            </div>
-            <div class="product_info">
-              <a href="">
-                <h3 class="pt-2 pb-2">čerpadlo WJ 203 EM</h3>
-              </a>
-              <p class="product_description">
-                Samonasávacia čerpadlo
-              </p>
-              <hr>
-              <h5 class="product_price">
-                len za <b>233,44 €</b>
-                <strike> / 289,80 €</strike>
-              </h5>
-              <div class="prd_buttons mt-4 d-flex justify-content-start gap-2">
-                <a href="#" class="btn btn-blue">pozrieť produkt</a>
-                <a href="#" class="btn btn-outline-blue">pridať do košika</a>
-              </div>
+
+        <!-- Product Card 1 -->
+        <div class="product_card">
+          <div class="best_seller bg-text">
+            <span class="text-white text-xs font-medium px-3 py-1 uppercase">🔥 bestseller</span>
+          </div>
+          <div class="product_image mb-3 rounded-xl bg-white">
+            <img src="./src/images/cerpadlo.png" class="w-full" alt="čerpadlo WJ 203 EM" />
+          </div>
+          <div class="product_info">
+            <a href="">
+              <h3 class="pt-2 pb-2 text-xl font-bold">čerpadlo WJ 203 EM</h3>
+            </a>
+            <p class=-light">
+              Samonasávacia čerpadlo
+            </p>
+            <hr class="my-2">
+            <h5 class="text-lg">
+              len za <b>233,44 €</b>
+              <strike class=-light"> / 289,80 €</strike>
+            </h5>
+            <div class="prd_buttons mt-4 flex justify-start gap-2">
+              <a href="#" class="btn-blue">pozrieť produkt</a>
+              <a href="#" class="btn-outline-blue">pridať do košika</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="product_card">
-            <div class="product_image mb-3 rounded-3">
-              <img src="images/znova.png" class="img-fluid" alt="čerpadlo Z NOVA" />
-            </div>
-            <div class="product_info">
-              <a href="">
-                <h3 class="pt-2 pb-2">čerpadlo Z NOVA</h3>
-              </a>
-              <p class="product_description">
-                Obehové čerpadlo
-              </p>
-              <hr>
-              <h5 class="product_price">
-                len za <b>233,44 €</b>
-                <strike> / 289,80 €</strike>
-              </h5>
-              <div class="prd_buttons mt-4 d-flex justify-content-start gap-2">
-                <a href="#" class="btn btn-blue">pozrieť produkt</a>
-                <a href="#" class="btn btn-outline-blue">pridať do košika</a>
-              </div>
+
+        <!-- Product Card 2 -->
+        <div class="product_card">
+          <div class="product_image mb-3 rounded-xl">
+            <img src="./src/images/znova.png" class="w-full" alt="čerpadlo Z NOVA" />
+          </div>
+          <div class="product_info">
+            <a href="">
+              <h3 class="pt-2 pb-2 text-xl font-bold">čerpadlo Z NOVA</h3>
+            </a>
+            <p class=-light">
+              Obehové čerpadlo
+            </p>
+            <hr class="my-2">
+            <h5 class="text-lg">
+              len za <b>233,44 €</b>
+              <strike class=-light"> / 289,80 €</strike>
+            </h5>
+            <div class="prd_buttons mt-4 flex justify-start gap-2">
+              <a href="#" class="btn-blue">pozrieť produkt</a>
+              <a href="#" class="btn-outline-blue">pridať do košika</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="product_card">
-            <div class="product_image mb-3 rounded-3">
-              <img src="images/bg05unf.png" class="img-fluid" alt="čerpadlo BF-05UNF" />
-            </div>
-            <div class="product_info">
-              <a href="">
-                <h3 class="pt-2 pb-2">čerpadlo BF-05UNF</h3>
-              </a>
-              <p class="product_description">
-                Kalové čerpadlo
-              </p>
-              <hr>
-              <h5 class="product_price">
-                len za <b>233,44 €</b>
-                <strike> / 289,80 €</strike>
-              </h5>
-              <div class="prd_buttons mt-4 d-flex justify-content-start gap-2">
-                <a href="#" class="btn btn-blue">pozrieť produkt</a>
-                <a href="#" class="btn btn-outline-blue">pridať do košika</a>
-              </div>
+
+        <!-- Product Card 3 -->
+        <div class="product_card">
+          <div class="product_image mb-3 rounded-xl">
+            <img src="./src/images/bg05unf.png" class="w-full" alt="čerpadlo BF-05UNF" />
+          </div>
+          <div class="product_info">
+            <a href="">
+              <h3 class="pt-2 pb-2 text-xl font-bold">čerpadlo BF-05UNF</h3>
+            </a>
+            <p class=-light">
+              Kalové čerpadlo
+            </p>
+            <hr class="my-2">
+            <h5 class="text-lg">
+              len za <b>233,44 €</b>
+              <strike class=-light"> / 289,80 €</strike>
+            </h5>
+            <div class="prd_buttons mt-4 flex justify-start gap-2">
+              <a href="#" class="btn-blue">pozrieť produkt</a>
+              <a href="#" class="btn-outline-blue">pridať do košika</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="product_card">
-            <div class="product_image mb-3 rounded-3">
-              <img src="images/75qjd224.png" class="img-fluid" alt="čerpadlo 75QJD224" />
-            </div>
-            <div class="product_info">
-              <a href="">
-                <h3 class="pt-2 pb-2">čerpadlo 75QJD224</h3>
-              </a>
-              <p class="product_description">
-                Ponorné čerpadlo
-              </p>
-              <hr>
-              <h5 class="product_price">
-                len za <b>233,44 €</b>
-                <strike> / 289,80 €</strike>
-              </h5>
-              <div class="prd_buttons mt-4 d-flex justify-content-start gap-2">
-                <a href="#" class="btn btn-blue">pozrieť produkt</a>
-                <a href="#" class="btn btn-outline-blue">pridať do košika</a>
-              </div>
+
+        <!-- Product Card 4 -->
+        <div class="product_card">
+          <div class="product_image mb-3 rounded-xl">
+            <img src="./src/images/75qjd224.png" class="w-full" alt="čerpadlo 75QJD224" />
+          </div>
+          <div class="product_info">
+            <a href="">
+              <h3 class="pt-2 pb-2 text-xl font-bold">čerpadlo 75QJD224</h3>
+            </a>
+            <p class=-light">
+              Ponorné čerpadlo
+            </p>
+            <hr class="my-2">
+            <h5 class="text-lg">
+              len za <b>233,44 €</b>
+              <strike class=-light"> / 289,80 €</strike>
+            </h5>
+            <div class="prd_buttons mt-4 flex justify-start gap-2">
+              <a href="#" class="btn-blue">pozrieť produkt</a>
+              <a href="#" class="btn-outline-blue">pridať do košika</a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <!-- footer -->
-  <div class="footer py-5 cp60" data-section="footer">
-    <div class="container pb-3">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="row">
+  <div class="footer py-5 cp60 bg-white" data-section="footer">
+    <div class="container mx-auto px-4 pb-3">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-2/3">
+          <div class="grid grid-cols-2 md:grid-cols-4">
             <!-- First Column -->
-            <!-- First Column -->
-            <div class="col-md-3 col-6">
-              <p class="footer-heading mb-4"><b>NAVRÁČKA</b></p>
-              <ul class="footer-list list-unstyled">
-                <li><a href="#">Čerpadla</a></li>
-                <li><a href="#">Príslušenstvo</a></li>
-                <li><a href="#">Zmekčovač vody</a></li>
-                <li><a href="#">Kúpelne</a></li>
-                <li><a href="#">Priemysel</a></li>
-                <li><a href="#">Sprostredkovanie</a></li>
+            <div class="col-span-1">
+              <p class="footer-heading mb-4 font-bold uppercase"><b>NAVRÁČKA</b></p>
+              <ul class="footer-list space-y-4">
+                <li><a href="#" class="text-sm-light">Čerpadla</a></li>
+                <li><a href="#" class="text-sm-light">Príslušenstvo</a></li>
+                <li><a href="#" class="text-sm-light">Zmekčovač vody</a></li>
+                <li><a href="#" class="text-sm-light">Kúpelne</a></li>
+                <li><a href="#" class="text-sm-light">Priemysel</a></li>
+                <li><a href="#" class="text-sm-light">Sprostredkovanie</a></li>
               </ul>
             </div>
 
             <!-- Second Column -->
-            <div class="col-md-3 col-6">
-              <p class="footer-heading mb-4"><b>Zákaznícka zóna</b></p>
-              <ul class="footer-list list-unstyled">
-                <li><a href="#">Záruka</a></li>
-                <li><a href="#">Montáž</a></li>
-                <li><a href="#">Reklamácia</a></li>
-                <li><a href="#">Kúpelne</a></li>
-                <li><a href="#">Na stiahnutie</a></li>
+            <div class="col-span-1">
+              <p class="footer-heading mb-4 font-bold uppercase"><b>Zákaznícka zóna</b></p>
+              <ul class="footer-list space-y-4">
+                <li><a href="#" class="text-sm-light">Záruka</a></li>
+                <li><a href="#" class="text-sm-light">Montáž</a></li>
+                <li><a href="#" class="text-sm-light">Reklamácia</a></li>
+                <li><a href="#" class="text-sm-light">Kúpelne</a></li>
+                <li><a href="#" class="text-sm-light">Na stiahnutie</a></li>
               </ul>
             </div>
 
             <!-- Third Column -->
-            <div class="col-md-3 col-6">
-              <p class="footer-heading mb-4"><b>Legal</b></p>
-              <ul class="footer-list list-unstyled">
-                <li><a href="#">Obchodné podmienky</a></li>
-                <li><a href="#">Ochrana osobných údajov</a></li>
-                <li><a href="#">Reklamačný poriadok</a></li>
-                <li><a href="#">Doručenie a platba</a></li>
+            <div class="col-span-1">
+              <p class="footer-heading mb-4 font-bold uppercase"><b>Legal</b></p>
+              <ul class="footer-list space-y-4">
+                <li><a href="#" class="text-sm-light">Obchodné podmienky</a></li>
+                <li><a href="#" class="text-sm-light">Ochrana osobných údajov</a></li>
+                <li><a href="#" class="text-sm-light">Reklamačný poriadok</a></li>
+                <li><a href="#" class="text-sm-light">Doručenie a platba</a></li>
               </ul>
             </div>
 
             <!-- Fourth Column -->
-            <div class="col-md-3 col-6">
-              <p class="footer-heading mb-4"><b>Kontakt</b></p>
-              <ul class="footer-list list-unstyled">
-                <li><a href="#">Bioteco s.r.o.</a></li>
-                <li><a href="#">+421 900 000 000</a></li>
-                <li><a href="#">info@bioteco.sk</a></li>
+            <div class="col-span-1">
+              <p class="footer-heading mb-4 font-bold uppercase"><b>Kontakt</b></p>
+              <ul class="footer-list space-y-4">
+                <li><a href="#" class="text-sm-light">Bioteco s.r.o.</a></li>
+                <li><a href="#" class="text-sm-light">+421 900 000 000</a></li>
+                <li><a href="#" class="text-sm-light">info@bioteco.sk</a></li>
               </ul>
             </div>
-
-
           </div>
-          <img src="images/payment-logo.svg" class="img-fluid mt-2" alt="Payment Methods" />
+          <img src="./src/images/payment-logo.svg" class="mt-8" alt="Payment Methods" />
         </div>
-        <div class="col-md-4 d-flex flex-column justify-content-between">
+        <div class="md:w-1/3 flex flex-col justify-between mt-8 md:mt-0">
           <!-- Logo at top -->
-          <div class="footer-logo text-end">
-            <img src="images/logo.png" class="img-fluid" alt="logo" style="max-height: 40px;">
+          <div class="footer-logo text-right">
+            <img src="./src/images/logo.png" class="h-10 ml-auto" alt="logo">
           </div>
 
           <!-- Social icons at bottom -->
           <div class="socials">
-            <ul class="footer-social-list list-unstyled d-flex justify-content-end gap-3 mb-0">
-              <li><a href="#"><img src="images/instagram.svg" class="img-fluid social-icon" alt="instagram"></a></li>
-              <li><a href="#"><img src="images/tiktok.svg" class="img-fluid social-icon" alt="tiktok"></a></li>
-              <li><a href="#"><img src="images/facebook.svg" class="img-fluid social-icon" alt="facebook"></a></li>
+            <ul class="flex justify-end space-x-3">
+              <li><a href="#"><img src="./src/images/instagram.svg" class="social-icon h-6 w-6" alt="instagram"></a>
+              </li>
+              <li><a href="#"><img src="./src/images/tiktok.svg" class="social-icon h-6 w-6" alt="tiktok"></a></li>
+              <li><a href="#"><img src="./src/images/facebook.svg" class="social-icon h-6 w-6" alt="facebook"></a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid p-0">
-      <hr>
+    <div class="container-fluid px-0">
+      <hr class="border-t border-gray-200">
     </div>
-    <div class="container">
-      <div class="row mt-4 align-items-center">
-        <div class="col-md-12">
-          <div class="d-flex justify-content-between align-items-center">
-            <!-- Left text -->
-            <p class="copyright-text mb-0">
-              © 2025 Bioteco s.r.o. | All Rights Reserved. | Environmentálne technológie
-            </p>
+    <div class="container mx-auto px-4">
+      <div class="mt-4 flex flex-col md:flex-row justify-between items-center">
+        <!-- Left text -->
+        <p class="copyright-text text-sm-light mb-4 md:mb-0">
+          © 2025 | Bioteco s.r.o. | All Rights Reserved. | Enviromentálne technológie
+        </p>
 
-            <!-- Right dropdown -->
-            <div class="country-dropdown">
-              <div class="dropdown">
-                <button class="btn btn-sm dropdown-toggle p-0" type="button" id="countryDropdown"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="images/flag.svg" alt="Slovakia" width="20" class="me-1">
-                  <span>Slovensko</span>
-                  <img src="images/dropdown.svg" alt="dropdown" width="12" class="ms-1 dropdown-arrow">
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="countryDropdown">
-                  <li><a class="dropdown-item" href="#">
-                      <img src="images/czech-flag.png" alt="Czech" width="20" class="me-2">
-                      CZ
-                    </a></li>
-                  <li><a class="dropdown-item" href="#">
-                      <img src="images/poland-flag.png" alt="Poland" width="20" class="me-2">
-                      PL
-                    </a></li>
-                  <li><a class="dropdown-item" href="#">
-                      <img src="images/hungary-flag.png" alt="Hungary" width="20" class="me-2">
-                      HU
-                    </a></li>
-                </ul>
-              </div>
-            </div>
+        <!-- Right dropdown -->
+        <div class="country-dropdown">
+          <div class="relative">
+            <button class="flex items-center text-sm" type="button" id="countryDropdown">
+              <img src="./src/images/flag.svg" alt="Slovakia" width="20" class="me-1">
+              <span>Slovensko</span>
+              <img src="./src/images/dropdown.svg" alt="dropdown" width="12" class="ms-1 dropdown-arrow">
+            </button>
+            <ul class="absolute hidden right-0 mt-2 w-32 bg-white shadow-md rounded-md z-10">
+              <li><a class="block px-4 py-2 text-sm hover:bg-gray-100 flex items-center" href="#">
+                  <img src="./src/images/czech-flag.png" alt="Czech" width="20" class="me-2">
+                  CZ
+                </a></li>
+              <li><a class="block px-4 py-2 text-sm hover:bg-gray-100 flex items-center" href="#">
+                  <img src="./src/images/poland-flag.png" alt="Poland" width="20" class="me-2">
+                  PL
+                </a></li>
+              <li><a class="block px-4 py-2 text-sm hover:bg-gray-100 flex items-center" href="#">
+                  <img src="./src/images/hungary-flag.png" alt="Hungary" width="20" class="me-2">
+                  HU
+                </a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel(
+        {
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          smartSpeed: 500,
+          margin: 50,
+          nav: false,
+          dots: true,
+          touchDrag: true,
+          mouseDrag: true,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            425: {
+              items: 1,
+            },
+            767: {
+              items: 1,
+            },
+            768: {
+              items: 1,
+            },
+
+
+          }
+        }
+      );
+
+    });
+  </script>
 </body>
 
 </html>

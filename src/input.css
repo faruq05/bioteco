@@ -1,0 +1,244 @@
+@import "tailwindcss";
+/* src/css/tailwind.css */
+:root {
+  /* Colors */
+  --color-primary: #0000FF;
+  --color-text: #1A1A1A;
+  --color-text-light: #636363;
+  --color-background: #f1f1f1;
+  --color-white: #fff;
+  --color-dark: #000;
+  
+  /* Typography */
+  --font-body: 'Archivo SemiExpanded', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+  --font-heading: 'Archivo SemiExpanded', ui-sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;  /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem;   /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem;  /* 20px */
+  --text-2xl: 2rem;    /* 32px */
+  --text-3xl: 3.125rem; /* 50px */
+  
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 1rem;     /* 16px */
+  --space-4: 1.5rem;   /* 24px */
+  --space-5: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-7: 3.75rem;  /* 60px */
+  
+  /* Sizes */
+  --size-10: 0.625rem; /* 10px */
+  --size-12: 0.75rem;  /* 12px */
+  --size-14: 0.875rem; /* 14px */
+  --size-16: 1rem;     /* 16px */
+  --size-18: 1.125rem; /* 18px */
+  --size-20: 1.25rem;  /* 20px */
+  --size-24: 1.5rem;   /* 24px */
+  --size-28: 1.75rem;  /* 28px */
+  --size-32: 2rem;     /* 32px */
+  --size-40: 2.5rem;   /* 40px */
+  --size-50: 3.125rem; /* 50px */
+  --size-120: 7.5rem;  /* 120px */
+  --size-250: 15.625rem; /* 250px */
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 12px;
+  --radius-3xl: 16px;
+  --radius-pill: 50px;
+  
+  /* Container */
+  --container: 75rem; /* 1200px */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-all: all 0.2s ease;
+  --transition-colors: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  --transition-transform: transform 0.2s ease;
+  
+}
+
+
+@layer utilities {
+    *{  font-family: var(--font-body);}
+  .cp60 {
+    padding: 3.75rem 0.25rem;
+  }
+  
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+   .bg-text {
+    background-color: var(--color-text);
+  }
+
+  .btn-dark {
+  border: 1px solid var(--color-background);
+  border-radius: var(--radius-pill);
+  background-color: transparent;
+  color: var(--color-background);
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-4);
+  transition: var(--transition-colors);
+}
+
+.btn-dark:hover {
+  border-color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn-blue {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
+  text-transform: uppercase;
+  transition: var(--transition-colors);
+}
+
+.btn-blue:hover {
+  border-color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-white);
+}
+
+.btn-outline-blue {
+  border: 1px solid var(--color-text);
+  border-radius: var(--radius-pill);
+  background-color: transparent;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
+  text-transform: uppercase;
+  transition: var(--transition-colors);
+}
+
+.btn-outline-blue:hover {
+  border-color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-white);
+}
+
+.navlinks a{
+    font-size: var(--text-sm);
+}
+  .marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .marquee {
+    display: flex;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+  }
+  .marquee-content {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .dropdown-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+  }
+  .search-box input {
+    padding-left: 2.5rem;
+    background: url('../src/images/search.svg') no-repeat 0.5rem center;
+    background-size: 1.125rem 1.125rem;
+    border: none;
+    background-color: #fff;
+  }
+  .hero {
+    background: url('../src/images/banner_bg.png') no-repeat right center;
+    background-size: contain;
+  }
+
+
+ .category-card {
+    background: url('../src/images/category_bg.png') no-repeat bottom center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+  }
+  .category-card:hover {
+  background: url('../src/images/category-overlay.png') no-repeat bottom center;
+  background-size: cover;
+}
+  .card-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text-area a img {
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    padding: 0.5rem;
+  }
+  .image-area img {
+    width: 100%;
+    height: 15.625rem;
+    object-fit: contain;
+    margin-top: 3.125rem;
+  }
+  .cta_image {
+    background: url(../src/images/ipskalyxx.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .product_image {
+    background-color: #fff;
+    padding: 1.5rem;
+  }
+  .product_card {
+    position: relative;
+  }
+  .best_seller {
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    top: 2rem;
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  .cta_text img{
+    width: 50px;
+  }
+
+  .prd_buttons a{
+    font-size: 12px!important;
+  }
+}

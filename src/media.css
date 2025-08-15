@@ -1,0 +1,55 @@
+@media (max-width: 991px) {
+  .marquee-content span {
+    min-width: max-content; 
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  .cta_image{
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px){
+      h1{
+    font-size: 30px;
+  }
+
+  .cta_text .p-5{
+    padding: 10px!important;
+  }
+  .cta_image{
+    height: 300px;
+  }
+
+  .footer-logo {
+    text-align: start!important;
+    margin-top: 50px;
+  }
+
+  .footer-logo img {
+    width: 40%;
+    height: auto;
+}
+
+.socials ul{
+    justify-content: start!important;
+    margin-top: 20px;
+}
+  
+} 
+
+
+
+@media(max-width:575px){
+    .hero_button a{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .top-bar{
+        display: none;
+    }
+}
