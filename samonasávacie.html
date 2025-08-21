@@ -27,7 +27,7 @@
     <!-- breadcrumbs -->
     <section class="breadcrumbs bg-background-light cp20" data-section="breadcrumbs">
         <div class="container mx-auto">
-            <div class="flex flex-wrap overflow-x-scroll">
+            <div class="flex flex-wrap">
                 <div class="w-full px-4 md:w-12/12 px-0 brd">
                     <ul class="flex gap-4">
                         <li class="flex items-center gap-4">
@@ -920,7 +920,8 @@
 
                 <!-- Right Products -->
                 <div class="sm:w-1/2 md:w-2/3 lg:w-3/4">
-                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-3 gap-6 auto-rows-fr">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-3 gap-6 auto-rows-fr">
                         <!-- Product Card 1 -->
                         <div class="product_card">
                             <div class="best-seller product_offer bg-text z-[999]">
@@ -1510,6 +1511,7 @@
                         <a href="#" class="btn btn-outline-blue btn-outline-blue-more">zobraziť ďalšie</a>
                     </div>
                 </div>
+            </div>
     </section>
     <!-- footer -->
     <div id="footer"></div>
@@ -1517,40 +1519,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel(
-                {
-                    items: 1,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    smartSpeed: 500,
-                    margin: 50,
-                    nav: false,
-                    dots: true,
-                    touchDrag: true,
-                    mouseDrag: true,
-                    autoplayHoverPause: true,
-                    responsive: {
-                        0: {
-                            items: 1,
-                        },
-                        425: {
-                            items: 1,
-                        },
-                        767: {
-                            items: 1,
-                        },
-                        768: {
-                            items: 1,
-                        },
-
-
-                    }
-                }
-            );
-
-        });
 
         // header footer fetching
         const components = [
