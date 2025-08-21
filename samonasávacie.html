@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bioteco-Samonasávacie</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./src/media.css" />
+    <link rel="stylesheet" href="./src/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/owl.theme.default.min.css" />
+
+</head>
+
+<body class="font-body">
+    <!-- header starts========================================= -->
+
+    <div id="header"></div>
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs bg-background-light cp20" data-section="breadcrumbs">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap overflow-x-scroll">
+                <div class="w-full px-4 md:w-12/12 px-0 brd">
+                    <ul class="flex gap-4">
+                        <li class="flex items-center gap-4">
+                            <a href="index.html">Home</a>
+                            <img src="./src/images/right-angle.svg" alt="right-angle" />
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <a href="index.html">Čerpadlá</a>
+                            <img src="./src/images/right-angle.svg" alt="right-angle" />
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <a href="index.html">Povrchové čerpadlá</a>
+                            <img src="./src/images/right-angle.svg" alt="right-angle" />
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <a href="index.html">Liatinové</a>
+                            <img src="./src/images/right-angle.svg" alt="right-angle" />
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <a href="index.html">Samonasávacie</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero -->
+    <section class="hero samonasávacie_hero cp60" data-section="samonasávacie_hero">
+        <div class="hero_slide_content">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-5">
+                <div class="lg:w-1/3 px-3">
+                    <p class="flex items-center text-xs font-medium hero_stars">
+                        <img src="./src/images/stars.svg" class="pe-2" alt="stars" />
+                        SPOĽAHLIVOSŤ OVERENÁ TISÍCKAMI ZÁKAZNÍKOV
+                    </p>
+                    <h1 class="text-3xl font-bold mb-4 mt-8">
+                        Samonasávacie
+                        Čerpadlá
+                    </h1>
+                </div>
+                <div class="w-full lg:w-1/2 text-center overflow-hidden">
+                    <div class="hero_image">
+                        <img src="./src/images/grundfos.png" class="w-full h-auto object-contain" alt="Banner 1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- filters and products -->
+    <section class="products cp60 bg-background" data-section="products">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row gap-6">
+                <!-- Left Filters -->
+                <aside class="sm:w-1/2 md:w-1/3 lg:w-1/4 relative">
+                    <div class="sticky top-20 space-y-6">
+                        <!-- Categories -->
+                        <div class="bg-white p-4 rounded-2xl">
+                            <ul class="space-y-4">
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Čerpadlá
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Príslušenstvo
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Zmekčovač vody
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Kúpelne
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Priemysel
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative">
+                                    <button class="w-full text-left flex justify-between items-center font-semibold"
+                                        onclick="toggleDropdown(this)">
+                                        Sprostredkovanie
+                                        <img src="./src/images/dropdown.svg"
+                                            class="w-4 h-4 transition-transform duration-300" alt="dropdown arrow" />
+                                    </button>
+                                    <ul
+                                        class="left-0 top-full w-full mt-1 bg-white border border-gray-200 rounded hidden space-y-1">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 1
+                                        </li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm">Podkategória 2
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- bottom Filter -->
+                        <div class="bg-white p-4 rounded-2xl w-full space-y-6">
+                            <!-- cena slider price range -->
+                            <div>
+                                <h3 class="font-semibold mb-2">Cena</h3>
+                                <!-- Slider -->
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <!-- <span class="text-xs text-gray-500" id="minLabel">0</span> -->
+                                    <input type="range" min="0" max="1000000" value="200" id="rangeSlider"
+                                        class="range-slider flex-1 h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+                                    <!-- <span class="text-xs text-gray-500" id="maxLabel">1000000</span> -->
+                                </div>
+                                <!-- Number Inputs -->
+                                <div class="flex items-center gap-2">
+                                    <div class="relative flex-1">
+                                        <input type="number" id="minInput" placeholder="0" value="0"
+                                            class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                        <span
+                                            class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">€</span>
+                                    </div>
+                                    <span class="text-gray-600">Do</span>
+                                    <div class="relative flex-1">
+                                        <input type="number" id="maxInput" placeholder="1000000" value="999999"
+                                            class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                        <span
+                                            class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- dropdown selects -->
+                            <div class="flex items-center gap-2">
+                                <ul class="space-y-5 w-full">
+                                    <!-- Dostupnosť -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Dostupnosť
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-1 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Skladom
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Značka -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Značka
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li>
+                                                <input type="search" placeholder="Hľadať…"
+                                                    class="w-full px-2 py-1 text-gray-500 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                                    onkeydown="if(event.key==='Enter'){performSearch(this.value)}" />
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Speroni
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Wilo
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Maximálny prietok -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Maximálny prietok
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <!-- slider -->
+                                            <div class="flex items-center space-x-2 mb-3">
+                                                <!-- <span class="text-xs text-gray-500" id="minLabel">0</span> -->
+                                                <input type="range" min="0" max="1000000" value="200" id="rangeSlider"
+                                                    class="range-slider flex-1 h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+                                                <!-- <span class="text-xs text-gray-500" id="maxLabel">1000000</span> -->
+                                            </div>
+
+                                            <!-- Number Inputs -->
+                                            <div class="flex items-center gap-2">
+                                                <div class="relative flex-1">
+                                                    <input type="number" id="minInput" placeholder="0" value="0"
+                                                        class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                                    <span
+                                                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">l/m</span>
+                                                </div>
+                                                <span class="text-gray-600">Do</span>
+                                                <div class="relative flex-1">
+                                                    <input type="number" id="maxInput" placeholder="1000000"
+                                                        value="999999"
+                                                        class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                                    <span
+                                                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">l/m</span>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Maximálny výtlak -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Maximálny výtlak
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <!-- slider -->
+                                            <div class="flex items-center space-x-2 mb-3">
+                                                <!-- <span class="text-xs text-gray-500" id="minLabel">0</span> -->
+                                                <input type="range" min="0" max="1000000" value="200" id="rangeSlider"
+                                                    class="range-slider flex-1 h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+                                                <!-- <span class="text-xs text-gray-500" id="maxLabel">1000000</span> -->
+                                            </div>
+
+                                            <!-- Number Inputs -->
+                                            <div class="flex items-center gap-2">
+                                                <div class="relative flex-1">
+                                                    <input type="number" id="minInput" placeholder="0" value="0"
+                                                        class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                                    <span
+                                                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">m</span>
+                                                </div>
+                                                <span class="text-gray-600">Do</span>
+                                                <div class="relative flex-1">
+                                                    <input type="number" id="maxInput" placeholder="1000000"
+                                                        value="999999"
+                                                        class="w-full pr-6 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                                                    <span
+                                                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 text-sm">m</span>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Napájacie napätie -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Napájacie napätie
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Sacia schopnosť -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Sacia schopnosť <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Sacia pripojenie -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Sacia pripojenie
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Výkon -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Výkon
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Výtlačné pripojeni  -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Výtlačné pripojenie
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Frekvencia -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Frekvencia
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Materiál -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Materiál
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Trieda ochrany -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Trieda ochrany
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Dĺžka kábla  -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Dĺžka kábla
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Kategória -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Kategória
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Výkon -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Výkon
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Výtlačné pripojenie -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Výtlačné pripojenie
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Frekvencia -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Frekvencia
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Materiál -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Materiál
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Trieda ochrany -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Trieda ochrany
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Dĺžka kábla -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Dĺžka kábla
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Materiál -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Materiál
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Trieda ochrany -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Trieda ochrany
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    <!-- Dĺžka kábla -->
+                                    <li class="relative">
+                                        <button class="w-full text-left flex justify-between items-center font-semibold"
+                                            onclick="toggleDropdown(this)">
+                                            Dĺžka kábla
+                                            <img src="./src/images/dropdown.svg"
+                                                class="w-4 h-4 transition-transform duration-300"
+                                                alt="dropdown arrow" />
+                                        </button>
+
+                                        <ul class="left-0 top-full w-full mt-1 space-y-2 z-10 hidden">
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Grundfos
+                                                </label>
+                                            </li>
+                                            <li class="py-1">
+                                                <label class="flex items-center gap-2 cursor-pointer text-sm">
+                                                    <input type="checkbox"
+                                                        class="form-checkbox h-4 w-4 text-blue-500" />
+                                                    Leo
+                                                </label>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Products -->
+                <div class="sm:w-1/2 md:w-2/3 lg:w-3/4">
+                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  2xl:grid-cols-3 gap-6 auto-rows-fr">
+                        <!-- Product Card 1 -->
+                        <div class="product_card">
+                            <div class="best-seller product_offer bg-text z-[999]">
+                                <span class="text-black text-xs font-medium px-3 py-1 uppercase">⭐ Prémiové</span>
+                            </div>
+                            <div class="best_seller bg-text z-[999]">
+                                <span class="text-white text-xs font-medium px-4 py-1 uppercase">🔥 bestseller</span>
+                            </div>
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/grundfos.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="product_card">
+
+                            <div class="best-seller product_offer bg-gray z-[999] ">
+                                <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                            </div>
+                            <div class="best_seller bg-red z-[999]">
+                                <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                            </div>
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 7 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 8 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 9 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 010 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 11 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 12 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 13 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 14 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 15 -->
+                        <div class="product_card">
+                            <!-- 
+                        <div class="best-seller product_offer bg-gray z-[999] ">
+                            <span class="text-white text-xs font-medium px-3 py-1 uppercase">👍🏻Optimálne</span>
+                        </div>
+                        <div class="best_seller bg-red z-[999]">
+                            <span class="text-white text-xs font-medium px-4 py-1 uppercase">💰akcia</span>
+                        </div> -->
+
+                            <div class="product_image mb-3 rounded-xl bg-white h-90 overflow-hidden group relative">
+                                <!-- Default Image -->
+                                <img src="./src/images/cerpadlo.png"
+                                    class="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                                    alt="čerpadlo WJ 203 EM" />
+
+                                <!-- Hover Image -->
+                                <img src="./src/images/samona.png"
+                                    class="w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                                    alt="čerpadlo WJ 203 EM hover" />
+                            </div>
+                            <div class="product_info">
+                                <a href="">
+                                    <h3 class="pt-2 pb-2 text-xl font-bold uppercase">čerpadlo WJ 203 EM</h3>
+                                </a>
+                                <p class="text-light">
+                                    Samonasávacia čerpadlo
+                                </p>
+                                <hr class="my-2">
+                                <h5 class="text-lg">
+                                    len za <b>233,44 €</b>
+                                </h5>
+                                <div class="prd_buttons mt-4 flex justify-start gap-2">
+                                    <a href="#" class="btn-blue">pozrieť produkt</a>
+                                    <a href="#" class="btn-outline-blue">pridať do košika</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center show_more_product space-y-6">
+                        <p>Zobrazuje sa <b>12 z 477</b> produktov</p>
+                        <a href="#" class="btn btn-outline-blue btn-outline-blue-more">zobraziť ďalšie</a>
+                    </div>
+                </div>
+    </section>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel(
+                {
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    smartSpeed: 500,
+                    margin: 50,
+                    nav: false,
+                    dots: true,
+                    touchDrag: true,
+                    mouseDrag: true,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        425: {
+                            items: 1,
+                        },
+                        767: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 1,
+                        },
+
+
+                    }
+                }
+            );
+
+        });
+
+        // header footer fetching
+        const components = [
+            { id: "header", file: "header.html" },
+            { id: "footer", file: "footer.html" }
+        ];
+
+        components.forEach(({ id, file }) => {
+            fetch(`./components/${file}`)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(err => console.error(`Error loading ${file}:`, err));
+        });
+    </script>
+</body>
+
+</html>

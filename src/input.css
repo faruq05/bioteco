@@ -77,10 +77,17 @@
   .cp60 {
     padding: 3.75rem 0.25rem;
   }
+
+  .cp20{
+    padding: 1.25rem 0.938rem;
+  }
   
   .bg-background {
     background-color: var(--color-background);
   }
+
+  .bg-background-light {
+    background-color: #D9D9D9;}
 
    .bg-text {
     background-color: var(--color-text);
@@ -169,6 +176,7 @@
   .hero {
     background: url('../src/images/banner_bg.png') no-repeat right center;
     background-size: contain;
+    
   }
   
 
@@ -222,8 +230,25 @@
   }
   .best_seller {
     position: absolute;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 8px 8px 0;
+    top: 4rem;
+    width: 150px;
+  }
+
+  .product_offer{
+     position: absolute;
+    border-radius: 0 8px 8px 0;
     top: 2rem;
+    width: 150px;
+    background-color: #fdc959;
+  }
+
+  .bg-gray {
+    background-color: #636363;
+  }
+
+  .bg-red{
+    background-color: #e63541;
   }
   .dropdown-toggle::after {
     display: none !important;
@@ -234,5 +259,23 @@
 
   .prd_buttons a{
     font-size: 12px!important;
+    padding: 10px 15px;
+  }
+
+  .breadcrumbs a{
+    color: var(--color-text-light);
+    font-size: var(--text-xs);
+  }
+
+  .breadcrumbs a:hover{
+    color: var(--color-text);
+  }
+
+  .show_more_product{
+    margin-top: 60px;
+  }
+
+  .btn-outline-blue-more{
+    padding: var(--space-3) var(--space-4);
   }
 }

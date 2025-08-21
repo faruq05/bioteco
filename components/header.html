@@ -1,0 +1,228 @@
+<header id="header" data-section="header">
+    <div class="top-bar pt-3 pb-3 bg-text text-white text-xs">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <span>Vyberte si inú krajinu alebo oblasť, aby ste videli obsah špecifický pre vašu polohu a nakupujte
+          online.</span>
+        <div class="flex items-center gap-4">
+          <select class="rounded border border-gray-300 px-2 py-1 bg-white text-black">
+            <option class="bg-white text-black">Slovenská republika (Slovenčina)</option>
+            <option class="bg-white text-black">Česká republika (Čeština)</option>
+          </select>
+          <button class="btn-dark">POKRAČOVAŤ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Light Gray Info Bar -->
+    <div class="info-bar pt-2 pb-2">
+      <div class="container mx-auto px-4">
+        <!-- Desktop View (original layout) -->
+        <div class="hidden lg:flex justify-between items-center info-bar-content">
+          <span class="flex items-center">
+            <img src="./src/images/tag.svg" class="pe-2" alt="tag" />
+            <p class="mb-0 text-sm">Odporučte nás a získajte zľavu na ďalší nákup</p>
+          </span>
+          <span class="flex items-center">
+            <img src="./src/images/truck.svg" class="pe-2" alt="truck" />
+            <p class="mb-0 text-sm">Doprava zdarma pri objednávke nad 150 €</p>
+          </span>
+          <span class="flex items-center">
+            <img src="./src/images/like.svg" class="pe-2" alt="like" />
+            <p class="mb-0 text-sm">Výhody pre firmy / registráciu</p>
+          </span>
+        </div>
+
+        <!-- Mobile View (marquee) -->
+        <div class="lg:hidden marquee-wrapper">
+          <div class="marquee">
+            <div class="marquee-content">
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/tag.svg" class="pe-2" alt="tag" />
+                <p class="mb-0 text-sm">Odporučte nás a získajte zľavu na ďalší nákup</p>
+              </span>
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/truck.svg" class="pe-2" alt="truck" />
+                <p class="mb-0 text-sm">Doprava zdarma pri objednávke nad 150 €</p>
+              </span>
+              <span class="flex items-center min-w-max lg:min-w-0">
+                <img src="./src/images/like.svg" class="pe-2" alt="like" />
+                <p class="mb-0 text-sm">Výhody pre firmy / registráciu</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-background py-3 shadow">
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex-shrink-0">
+          <img src="./src/images/logo.png" alt="Logo" class="w-[120px]" />
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button id="mobile-menu-button" class="2xl:hidden flex flex-col justify-between w-6 h-6 focus:outline-none">
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="hidden 2xl:flex flex-1 items-center justify-between">
+          <ul class="flex space-x-8 mx-auto">
+            <!-- Čerpadlá -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Čerpadlá <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
+              </a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Príslušenstvo -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Príslušenstvo <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
+              </a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Zmäkčovač vody -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Zmäkčovač vody <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
+              </a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Kúpeľne -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Kúpeľne <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
+              </a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Priemysel -->
+            <li class="navlinks">
+              <a href="#" class="text-sm-light font-medium hover:text-primary">Priemysel</a>
+            </li>
+
+            <!-- Sprostredkovanie -->
+            <li class="relative group navlinks">
+              <a href="#" class="flex items-center text-sm-light font-medium hover:text-primary">
+                Sprostredkovanie <img src="./src/images/dropdown.svg" class="dropdown-icon ml-1" alt="" />
+              </a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-md py-2 w-48 mt-1 z-10">
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Sub-item 2</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Search + Icons -->
+          <div class="flex items-center space-x-3">
+            <input type="search" placeholder="Hľadať produkt..."
+              class="w-64 py-2 px-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <a href="#"><img src="./src/images/flag.svg" class="w-6 h-6" /></a>
+            <a href="#"><img src="./src/images/user.svg" class="w-6 h-6" /></a>
+            <a href="#"><img src="./src/images/cart.svg" class="w-6 h-6" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden 2xl:hidden mt-2 px-4">
+        <ul class="space-y-2">
+          <!-- Repeat all menu items -->
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-cerpadla')">
+              Čerpadlá <span>▾</span>
+            </button>
+            <ul id="mobile-cerpadla" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-prislusenstvo')">
+              Príslušenstvo <span>▾</span>
+            </button>
+            <ul id="mobile-prislusenstvo" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Zmäkčovač')">
+              Zmäkčovač vody <span>▾</span>
+            </button>
+            <ul id="mobile-Zmäkčovač" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Kúpeľne')">
+              Kúpeľne <span>▾</span>
+            </button>
+            <ul id="mobile-Kúpeľne" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+          <li class="navlinks">
+            <a href="#" class="text-sm-light font-medium hover:text-primary">Priemysel</a>
+          </li>
+
+          <li>
+            <button class="w-full flex justify-between items-center text-sm-light font-medium py-2 focus:outline-none"
+              onclick="toggleDropdown('mobile-Kúpeľne')">
+              Sprostredkovanie <span>▾</span>
+            </button>
+            <ul id="mobile-Kúpeľne" class="hidden pl-4 space-y-1">
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 1</a></li>
+              <li><a href="#" class="block text-sm py-1 hover:text-primary">Sub-item 2</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <!-- Search + Icons -->
+        <div class="flex items-center space-x-3 search-box">
+          <div class="relative">
+            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+              <!-- You can replace with your own SVG if needed -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-search-icon lucide-search">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </span>
+            <input type="search" placeholder="Hľadať produkt..."
+              class="w-64 py-2 pl-10 pr-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <a href="#"><img src="./src/images/flag.svg" class="w-6 h-6" /></a>
+          <a href="#"><img src="./src/images/user.svg" class="w-6 h-6" /></a>
+          <a href="#"><img src="./src/images/cart.svg" class="w-6 h-6" /></a>
+        </div>
+      </div>
+    </nav>
+  </header>
