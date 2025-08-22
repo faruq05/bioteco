@@ -45,3 +45,18 @@ minInput.addEventListener('input', () => {
 
   minInput.value = minVal;
 });
+
+
+function toggleDropdown(button) {
+  const content = button.nextElementSibling;
+  content.classList.toggle('hidden');
+
+  const arrow = button.querySelector('img');
+  if (arrow) {
+    if (content.classList.contains('hidden')) {
+      arrow.style.transform = 'rotate(0deg)';
+    } else {
+      arrow.style.transform = 'rotate(180deg)';
+    }
+  }
+}

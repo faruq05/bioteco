@@ -1,3 +1,9 @@
+@media(max-width: 1279px) {
+ .psq{
+  width: 100%;
+ }
+}
+
 @media (max-width: 991px) {
   .marquee-content span {
     min-width: max-content; 
@@ -57,4 +63,6 @@
     .top-bar{
         display: none;
     }
+
 }
+
